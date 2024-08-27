@@ -1,3 +1,4 @@
 CheatSheet for HTML, CSS, JS, jQuery, PHP
 link - https://htmlcheatsheet.com/
 
+CHeatsheet for Every codes - https://quickref.me/
