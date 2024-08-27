@@ -1,0 +1,18 @@
+button {
+  background-color: #4F86EB;
+  padding: 10px 10px;
+  font-size: 18px;
+  color: #EBFCFF;
+  border: none;
+  border-radius: 5px;
+  /* padding-left: 10px; */
+}
+
+#glogo {
+  /* padding-right: 10px; */
+  background-color: #EBFCFF;
+  color: #eaeef5;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}

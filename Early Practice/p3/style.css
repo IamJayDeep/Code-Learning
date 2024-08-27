@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* width: 90%; */
+  margin: 0 auto;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+.navbar {
+  /* height: 50px; */
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.logo img {
+  width: 130px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+nav .menu1 {
+  margin: 20px;
+  padding: 10px;
+  align-content: center;
+}
+
+.menu {
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(128, 126, 126);
+}
+
+div .menu:hover {
+  text-decoration: underline 3px solid #8071d0;
+  /* border-bottom: 3px solid #8071D0; */
+  padding-bottom: 2px;
+  color: rgb(23, 23, 23);
+  font-weight: bold;
+}
+
+.acc {
+  text-decoration: none;
+}
+
+.account {
+  margin: 20px;
+  padding: 15px 25px;
+  align-content: center;
+  border: 1px solid rgb(246, 242, 242);
+  border-radius: 20px;
+  background-color: #ffd8db;
+  color: #a389cc;
+}
+
+.main-sec {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin: 40px;
+}
+
+section .workspace {
+  width: 40%;
+  /* height: 800px; */
+}
+
+section .landing-img {
+  width: 60%;
+}
+
+img {
+  width: auto;
+  margin-left: 50px;
+}
+
+h1 {
+  font-size: 100px;
+  /* position: relative; */
+  top: -300px;
+}
+
+p {
+  font-size: 20px;
+  width: 550px;
+}
+
+.box1 {
+  position: relative;
+  background-color: #8071d0;
+  width: 13px;
+  height: 13px;
+  bottom: 90px;
+  left: 510px;
+}
+
+.sec1 {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  margin: 20px;
+}
+
+.new-acc a {
+  padding: 18px 25px;
+  background-color: #5243c0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 18px;
+  text-decoration: none;
+  position: relative;
+  top: 16px;
+}
+
+.new-acc a:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+  box-shadow: 2px 2px 20px grey;
+}
+
+div .up {
+  cursor: pointer;
+  
+}
+
+div .down {
+  cursor: pointer;
+}
+
+.up:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+  box-shadow: transparent;
+}
+
+.down:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+  box-shadow: transparent;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(244, 247, 247);
+  width: 400px;
+  height: 45px;
+  position: relative;
+  left: 20px;
+  border-radius: 15px;
+}
+
+.card1 .tick {
+  position: relative;
+  right: 33px;
+  top: 2px;
+}
+
+.profile img {
+  /* position: relative; */
+  right: 18px;
+  width: 35%;
+}
+
+.tick img {
+  width: 35%;
+}
+
+.txt {
+  position: relative;
+  right: 18px;
+}
+
+.card2 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(244, 247, 247);
+  width: 400px;
+  height: 45px;
+  position: relative;
+  left: 20px;
+  border-radius: 15px;
+}
+
+.card2 .tick {
+  position: relative;
+  right: 33px;
+  top: 2px;
+}
+
+.card3 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(244, 247, 247);
+  width: 400px;
+  height: 45px;
+  position: relative;
+  left: 20px;
+  border-radius: 15px;
+}
+
+.card3 .tick{
+  position: relative;
+  right: 33px;
+  top: 2px;
+}
+
+.card4 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(244, 247, 247);
+  width: 400px;
+  height: 45px;
+  position: relative;
+  left: 20px;
+  border-radius: 15px;
+}
+
+.card4 .tick {
+  position: relative;
+  right: 33px;
+  top: 2px;
+}
+
+.profile {
+  position: absolute;
+  left: 160px;
+}
+
+.date {
+  position: absolute;
+  left: 265px;
+  font-size: 15px;
+}
+
+.card1:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  box-shadow: 2px 2px 10px rgb(229, 226, 226);
+}
+
+.card2:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  box-shadow: 2px 2px 10px rgb(229, 226, 226);
+}
+
+.card3:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  box-shadow: 2px 2px 10px rgb(229, 226, 226);
+}
+
+.card4:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  box-shadow: 2px 2px 10px rgb(229, 226, 226);
+}
+
+.white:hover {
+  content: url(./image/tick-blue.png);
+  cursor: pointer;
+}
+
+.blank1 {
+  background-color: #FED7DA;
+  width: 22px;
+  height: 10px;
+  position: absolute;
+  left: 350px;
+  border-radius: 10px;
+}
+
+.blank2 {
+  background-color: #FD6534;
+  width: 22px;
+  height: 10px;
+  position: absolute;
+  left: 350px;
+  border-radius: 10px;
+}
+
+.blank3 {
+  background-color: #9ED095;
+  width: 22px;
+  height: 10px;
+  position: absolute;
+  left: 350px;
+  border-radius: 10px;
+}
+
+.blank4 {
+  background-color: #FFE4A0;
+  width: 22px;
+  height: 10px;
+  position: absolute;
+  left: 350px;
+  border-radius: 10px;
+}

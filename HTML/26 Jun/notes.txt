@@ -1,0 +1,7 @@
+ list
+
+ 3 types
+  A- (ol) Ordered list
+  B- (ul) Unoredered list 
+  C- (dl) Description list
+        

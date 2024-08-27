@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+}
+
+html {
+  /* width: 70%; */
+  /* margin: 0% auto; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(217, 231, 243);
+}
+
+form {
+  width:70%;
+  background-color: rgb(241, 246, 246);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 3% 3%;
+  margin: 5% auto;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px,1fr));
+  gap: 30px;
+}
+
+legend {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+
+input, select, textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  /* width: 30%; */
+  align-items: end;
+}
+
+button {
+  width: 30%;
+  border-radius: 4px;
+  height: 30px;
+}
+
+input:focus {
+  outline-color: red;
+}
+
+@media screen and (max-width:640px) {
+  fieldset {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(200px,1fr));
+  }
+  button {
+    font-size: 12px;
+  }
+}

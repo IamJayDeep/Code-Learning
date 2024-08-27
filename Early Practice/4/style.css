@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 900px;
+  height: 200px;
+  overflow: auto;
+}
+
+.gradient {
+  height: 200px;
+  width: 500px;
+  background: linear-gradient(to right, blue, lightblue, violet, green);
+}
+
+.gradient2 {
+  height: 200px;
+  width: 500px;
+  background: linear-gradient(to right, red 10%, green 30%, blue 60%, black 80%);
+}
+
+.gradient3 {
+  height: 200px;
+  width: 500px;
+  background: linear-gradient(21deg, rgba(255,0,0,.8), rgba(255,0,0,0) 51.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 50%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 90%),
+  linear-gradient(35deg, violet, brown, black 90%);
+}
+
+
+.navbar1 {
+  background-color: aquamarine;
+
+}

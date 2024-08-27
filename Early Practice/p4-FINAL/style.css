@@ -1,0 +1,91 @@
+body {
+  margin: 2% 2% 0 2%;
+  font-family: "Dosis", sans-serif;
+  color: #121213;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.bgimg {
+  display: flex;
+  height: 121vh;
+  justify-content: center;
+  background: linear-gradient(
+      76deg,
+      rgba(193, 195, 204, 0.83) 35%,
+      rgba(193, 195, 204, 0.28) 65%
+    ),
+    url(https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg);
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: #e47312;
+  z-index: 2;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  z-index: 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo img {
+ width: 100px;
+ padding: 43px 35px;
+}
+
+
+.navbar {
+  position: absolute;
+  top: 0%;
+  margin-top: 90px;
+  background-color: #fff;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 70%;
+  /* margin-left: 18%; */
+  /* margin-right: 0; */
+}
+
+.navlink {
+  padding: 12px;
+  text-decoration: none;
+  color: #474a4d;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.quote {
+  padding: 30px;
+  background-color: #e47312;
+  z-index: 2;
+  margin-left: 20px;
+  margin-right: 0;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navlink:hover {
+  color: #e58028;
+}
+
+.down-arrow {
+  width: 8px;
+  position: relative;
+  left: 2px;
+}
+.current {
+  color: #e58028;
+}

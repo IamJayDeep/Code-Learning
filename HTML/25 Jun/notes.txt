@@ -1,0 +1,14 @@
+tags in HTML 
+<title> -> Title the page
+
+Heading Tag in body
+<h1> </h1>
+
+<p> paragraph tag 
+
+attributes -> fives extra features to tags
+
+<link> -> Used to link CSS files
+<script> -> Used to link Js files
+
+<meta> -> data about data (Any information that describes our web page)

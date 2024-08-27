@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+
+</head>
+
+<body>
+  <form>
+    <div>
+      <label for="DOB">Date of Birth:
+        <input type="date" name="DOB" id="DOB">
+      </label>
+    </div>
+    <div>
+      <label for="Country">Country</label>
+      <select name="Country" id="Country">
+        <option value="in">India</option>
+        <option value="sl">Sri-lanka</option>
+        <option value="ru">Russia</option>
+        <option value="cn">China</option>
+      </select>
+    </div>
+    <div>
+      <label>Gender:</label>
+      <!-- <diV id="gender"> -->
+      <input type="radio" name="gender" value="m" id="m">
+      <label for="m">Male</label>
+      <input type="radio" name="gender" value="f" id="f">
+      <label for="f">Female</label>
+      <input type="radio" name="gender" value="o" id="o">
+      <label for="o">Others</label>
+
+      <!-- </diV> -->
+    </div>
+    <div>
+      <label for="gift">Gifts fo kids:</label>
+      <select name="stn" id="gift">
+        <option value="">--Select items--</option>
+        <optgroup label="Stationary">
+          <option>Bag</option>
+          <option>pencil</option>
+          <option>Pen</option>
+        </optgroup>
+
+      </select>
+    </div>
+    <label for="country">Country: </label>
+    <input name="Nation" id="country" list="nations">
+    <datalist id="nations">
+      <option value="India"></option>
+      <option value="China"></option>
+      <option value="Pakistan"></option>
+      <option value="United Kingdom"></option>
+      <option value="United States"></option>
+    </datalist>
+    <input type="submit" value="Registor">
+  </form>
+</body>
+
+</html>

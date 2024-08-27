@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <body>
+      <h2>Registration Form</h2>
+      <form>
+        Name <span style="color: red;">*</span> <input type="text" placeholder="Full name" required><br>
+        Address <input type="text"><br>
+        Mobile No. <input type="number"><br>
+        Email <input type="email"><br>
+        Gender <br>
+        <input type="radio" value="m" name="gender">Male
+        <input type="radio" value="f" name="gender">Female
+        <input type="radio" value="o" name="gender">Other <br>
+        Password <input type="password"><br>
+
+        Hobbies
+        <input value="Reading" name="Hobbies" type="checkbox">Reading
+        <input value="Running" name="Hobbies" type="checkbox">Running
+        <input value="Swimming" name="Hobbies" type="checkbox">Swimming
+        <input value="Fighting" name="Hobbies" type="checkbox">Fighting
+
+        <div>
+
+          <label for="Questions">Security Questions</label><br>
+          <select name="Security Questions" id="Questions">
+            <option value="petname">What is your first pet name</option>
+            <option value="fathername">what is your father name</option>
+          </select><br>
+          <textarea name="answer" id="Q_ans"></textarea>
+        </div>
+
+        <div>
+          <label for="username">Name: <span aria-label="required">*</span></label>
+          <input id="username" type="text" name="username" required>
+        </div>
+
+        <input type="submit" id="Login">
+
+      </form>
+    </body>
+  </head>
+</html>

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(./Resources/background.jpg);
+  background-position: center;
+  background-size: max(632px, 100vw);
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+}
+
+.main .box {
+  height: 80vh;
+  width: 80%;
+  opacity: 0.44;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 75vw;
+  margin: auto;
+  height: 62px;
+}
+
+nav img {
+  color: red;
+  width: 114px;
+  position: relative;
+  z-index: 1;
+}
+
+nav button {
+  position: relative;
+  z-index: 1;
+}
+
+.main-txt {
+  color: white;
+  height: calc(100% - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  padding: 23px;
+
+  font-family: "Martel Sans", "Segoe UI", sans-serif;
+}
+
+.main-txt > :nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.main-txt > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+.main-txt > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.separation {
+  height: 11px;
+  background-color: #232323;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  background-color: #131311;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn1 {
+  color: white;
+  border: 1px solid white;
+}
+.btn-red {
+  background-color: red;
+  border-radius: 4px;
+  color: white;
+  padding: 5px 25px;
+  font-size: 18px;
+}
+
+.btn-red-sn {
+  background-color: red;
+  color: white;
+}
+
+.main input {
+  padding: 10px 100px 10px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid white;
+  color: white;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  color: white;
+  margin: auto;
+  height: 70vh;
+  position: relative;
+}
+
+.secimg {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+.secimg img {
+  width: 40vw;
+}
+
+.secimg video {
+  position: absolute;
+  top: 93px;
+  right: 85px;
+  width: 72.5%;
+  z-index: -1;
+}
+
+div > h1 {
+  font-size: 48px;
+}
+
+div > p {
+  font-size: 20px;
+}
+
+.second > img {
+  width: 75%;
+}
+
+.second > div,
+.forth > div {
+  align-items: center;
+}
+
+.square {
+  width: 350px;
+  height: 100px;
+  border: 2px solid rgba(100, 98, 98, 0.953);
+  border-radius: 5px;
+  background-color: rgba(15, 15, 15, 0.973);
+  position: absolute;
+  top: 314px;
+  right: 718px;
+}
+
+.third div > video {
+  position: absolute;
+  top: 55px;
+  width: 62%;
+  left: 113px;
+  z-index: -1;
+}

@@ -1,0 +1,44 @@
+.flexStart {
+  background-color: aquamarine;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+a {
+  padding-right: 10px;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  padding: 10px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  padding: 10px;
+}
+.space-around {
+  display: flex;
+  justify-content: space-around;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: aquamarine;
+  padding: 10px;
+}
+

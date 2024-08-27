@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application (web)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>JOB APPLICATION</legend>
+
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" />
+          <label for="last-name">Last Name</label>
+          <input type="text" name="Last-name" id="last-name" />
+        </div>
+  
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="job-role">Jobe Role</label>
+          <select name="job-role" id="job-role">
+            <option value="">-- Select Job Role --</option>
+            <option value="DevOps">DevOps</option>
+            <option value="WebDev">WebDev</option>
+            <option value="Cloud-Eng">Cloud Engineer</option>
+            <option value="full-stack">Full stack developer</option>
+          </select>
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <textarea name="address" id="address" rows="4"></textarea>
+        </div>
+        
+        <div>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+          <label for="pincode">Pincode</label>
+          <input type="number" name="pincode" id="pincode" maxlength="6" />
+        </div>
+        <div>
+          <label for="start-date">Start Date</label>
+          <input
+            type="date"
+            name="start-date"
+            id="start-date"
+            min="2024-08-01"
+            value="2024-08-01"
+          />
+
+          <label for="cv">Upload Your Cv</label>
+          <input type="file" name="cv" id="cv" />
+        </div>
+
+        <div class="button">
+          <button type="submit">Apply Now</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<header>: This tag should be the first tag after the <body> tag and contains the main header elements of the page, such as the logo, navigation, and main title.
+<nav>: This tag should be inside the <header> tag and contains the main navigation links of the page.
+<main>: This tag should come after the <header> tag and contains the main content of the page.
+<section>: This tag should be inside the <main> tag and contains a self-contained section of related content, such as an article, blog post, or product description.
+<article>: This tag should be inside the <section> tag and contains a single piece of content, such as a blog post or news article.
+<aside>: This tag should be inside the <section> tag and contains secondary content related to the main content, such as a sidebar or related links.
+<footer>: This tag should be the last tag before the </body> tag and contains the main footer elements of the page, such as copyright information, legal disclaimers, and social media links.

@@ -1,0 +1,7 @@
+baisc styling 
+
+CSS/Styling :  Peroperties andd their values
+Syntax : <property-name> : <property-value>
+Example : color : red;
+font-size:20px;
+background-color

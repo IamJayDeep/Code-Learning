@@ -1,0 +1,24 @@
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  color: rgb(138,144,150);
+  font-family:  "Playwrite DK Uloopet", cursive;
+  font-weight: 600;
+  font-size: 30px;
+  border: 2px solid red;
+  margin: 10px;
+  margin-left: 50px;
+}
+.navbar {
+  color: rgb(138,144,150);
+  display: flex;
+}
+
+.menu {
+  
+}
