@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.part1 {
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.part1 h1 {
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 3em;
+}
+
+.part1 span {
+    font-weight: 200;
+}
+
+.part2 h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    background-color: #161619;
+    padding: 25px;
+}
+
+.part2 span {
+    font-size: 1.7em;
+}

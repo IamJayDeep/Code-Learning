@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    background-color: rgba(59, 57, 57, 0.337);
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 360px;
+    min-height: 360px;
+    padding: 33px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+input {
+    width: 75%;
+    padding: 5px;
+    border: 2px solid rgb(54, 50, 50);
+    outline: none;
+    font-size: 19px;
+}
+button {
+    width: 20%;
+    background-color: rgb(54, 50, 50);
+    color: #fff;
+    font-size: 19px;
+    padding: 5px;
+    border: 2px solid rgb(54, 50, 50);
+    outline: none;
+    cursor: pointer;
+}
+
+/* .text {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.text ul {
+    width: unset;
+    margin: 0;
+    padding: 0;
+}
+
+.text ul li {
+    background-color: rgb(54, 50, 50);
+    color: #fff;
+    font-size: 19px;
+    padding: 5px 0;
+    /* margin: 10px; */
+    position: relative;
+    /* text-align: left; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin: 10px auto;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+ul li span {
+    display: block;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+ul li span:hover {
+    transform: scale(1.05);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.576);
+}
+
