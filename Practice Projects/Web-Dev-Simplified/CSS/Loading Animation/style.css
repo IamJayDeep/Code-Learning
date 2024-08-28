@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  font-size: 2em;
+  overflow: hidden;
+  position: relative;
+}
+
+.spinner-sector {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  mix-blend-mode: overlay;
+  animation: spin var(--duration) var(--timing) infinite;
+  pointer-events: none;
+  /* animation: spin var(--duration) var(--timimg) delay infinite direction fill-mode; */
+}
+
+.spinner-sector-red {
+  border-top-color: rgb(255, 143, 143);
+  --duration: 1s;
+  --timing: ease-in-out;
+}
+.spinner-sector-blue {
+  border-left-color: rgb(146, 146, 250);
+  --duration: 1.25s;
+  --timing: ease-in;
+}
+.spinner-sector-green {
+  border-right-color: rgb(128, 255, 128);
+  --duration: 1.5s;
+  --timing: ease-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
