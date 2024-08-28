@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background-image: url(https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.avatar::after,
+.avatar::before {
+  --scale: 0;
+  --tooltip-color: #333;
+  --arrow-size: 17px;
+
+  position: absolute;
+  top: -2.8rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(var(--scale));
+  transition: 175ms transform;
+  transform-origin: bottom center;
+}
+
+.avatar::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+
+  content: attr(data-tooltip);
+  color: #fff;
+  background-color: var(--tooltip-color);
+  width: max-content;
+  padding: 0.5rem;
+  max-width: 100%;
+  font-size: 1.8em;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.avatar:hover::after,
+.avatar:hover::before {
+  --scale: 1;
+}
+
+.avatar::after {
+  /* --translate-y: var(--arrow-size); */
+  content: "";
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  position: absolute;
+  top: -5px;
+  padding: 0;
+  transform-origin: top center;
+  margin: 0;
+}
