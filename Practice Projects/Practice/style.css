@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-color: #fff;
+  margin: 2rem;
+  max-width: 250px;
+  border: 1px solid hsl(176, 50%, 20%);
+  padding: 0.7rem;
+  border-radius: 0.3em;
+  box-shadow: 0 1px 5px hsl(176, 50%, 20%);
+}
+
+.card .card-head {
+  padding-bottom: 0.5rem;
+  font-size: 1.4em;
+}
+
+.card .card-body {
+  font-size: 1.1em;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+}
+.card .card-feet {
+  margin-top: 0.7rem;
+}
+
+.btn {
+  padding: 0.3em 1.1em;
+  background: hsl(176, 20%, 80%);
+  border: none;
+  cursor: pointer;
+  outline: 1px solid hsl(176, 50%, 20%);
+  border-radius: 0.3em;
+  font-size: 0.8em;
+}
+
+.btn-qry {
+  background: hsl(176, 20%, 93%);
+}
+
+.btn:hover {
+  transform: scale(1.01);
+  transition: 50ms ease;
+}
