@@ -1,0 +1,27 @@
+.grandparent {
+  width: 400px;
+  height: 400px;
+  background-color: brown;
+  position: relative;
+  display: grid;
+  border: 5px solid black;
+}
+
+.parent {
+  width: 300px;
+  height: 100px;
+  /* gap: 25px; */
+  /* align-items: center; */
+  background-color: aqua;
+  margin: auto;
+  display: flex;
+  border: 5px solid black;
+}
+
+.child {
+  width: 75px;
+  height: 60px;
+  background-color: darkgreen;
+  border: 5px solid black;
+  margin: auto;
+}
