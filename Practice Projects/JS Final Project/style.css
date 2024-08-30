@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  padding: 0 2vw;
+}
+
+.heading {
+  padding-left: 50px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4%;
+}
+.card {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  margin: 30px 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .info {
+  padding: 0 10px;
+  padding-bottom: -10px;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(27, 25, 25);
+}
+
+h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(110, 110, 110);
+}
+
+h4 {
+  font-size: 14px;
+  color: #009688;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#accessory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#clothing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  display: block;
+  /* for main.js file */
+}
+
+input {
+  display: block;
+  margin: 100px auto 0;
+  width: 500px;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1px solid black;
+  /* border-radius: 10px; */
+  background-color: hsla(200, 121%, 70%, 0.3);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  
+}
+
+ul li {
+  margin: 0;
+  padding: 8px;
+  text-align: left;
+  list-style: none;
+  width: 500px;
+  /* box-shadow: 0 0 1px black; */
+  background-color: hsla(200, 121%, 70%, 0.3);
+
+}
+
+::placeholder {
+  color: #333;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: hsla(200, 125%, 70%, 0.5);
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
