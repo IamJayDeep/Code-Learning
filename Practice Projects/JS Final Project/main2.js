@@ -1,13 +1,3 @@
-var splide = new Splide(".splide", {
-  reWind: true,
-  autoplay: true,
-  interval: 2000,
-  type: "loop",
-  arrows: false,
-  pagination: "-3rem",
-});
-splide.mount();
-
 var productList = [
   {
     id: "1",
@@ -190,60 +180,25 @@ var productList = [
   },
 ];
 
-var clothing = document.getElementById("clothingCard");
-var accessory = document.getElementById("accessoryCard");
-for (let i = 0; i < productList.length; i++) {
-  var productDetails = productList[i];
+$(document).ready(function () {
+  var splide = new Splide(".splide", {
+    reWind: true,
+    autoplay: true,
+    interval: 2000,
+    type: "loop",
+    arrows: false,
+    pagination: "-3rem",
+  });
+  splide.mount();
 
-  var card = document.createElement("div");
-  card.classList.add("card");
-
-  var info = document.createElement("div");
-  info.classList.add("info");
-
-  var img = document.createElement("img");
-  img.src = productDetails.preview;
-
-  var h2 = document.createElement("h2");
-  h2.innerText = productDetails.name;
-
-  var brandSpan = document.createElement("h3");
-  brandSpan.innerText = productDetails.brand;
-
-  var priceSpan = document.createElement("h4");
-  priceSpan.innerText = `Rs. ` + productDetails.price;
-
-  card.append(img, info);
-  info.append(h2, brandSpan, priceSpan);
-  if (productDetails.isAccessory === true) {
-    accessory.append(card);
-  } else {
-    clothing.append(card);
-  }
-}
-
-function onArrayFilter(item) {
-  var includes = item.toUpperCase().includes();
-}
-
-var search = document.getElementById("searchBox");
-search.addEventListener("keyup", function (e) {
-  let searchWords = e.target.value.toUpperCase();
-  function productListFilter(product) {
-    let includes = product.name.toUpperCase().includes(searchWords);
-    return includes;
-  }
-
-  clothing.innerHTML = "";
-  accessory.innerHTML = "";
-
-  var filterProdcutsList = productList.filter(productListFilter);
-  console.log(filterProdcutsList);
-  for (let i = 0; i < filterProdcutsList.length; i++) {
-    var productDetails = filterProdcutsList[i];
+  var clothing = document.getElementById("clothingCard");
+  var accessory = document.getElementById("accessoryCard");
+  for (let i = 0; i < productList.length; i++) {
+    var productDetails = productList[i];
 
     var card = document.createElement("div");
     card.classList.add("card");
+    card.id = `card-${productDetails.id}`;
 
     var info = document.createElement("div");
     info.classList.add("info");
@@ -268,4 +223,11 @@ search.addEventListener("keyup", function (e) {
       clothing.append(card);
     }
   }
+
+  $(".card").on("click", (e) => {
+    console.log(e.currentTarget.id);
+    const clickEleId = e.currentTarget.id;
+    const id = clickEleId.split("-")[1];
+    window.location.href = "product-details.html?productId=" + id;
+  });
 });
