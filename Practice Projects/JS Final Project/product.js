@@ -98,7 +98,7 @@ $(document).ready(() => {
         const cartIcon = $('#itemAmt').text(basket.map((x) => x.qty).reduce((x, y) => x + y, 0))
 
       }
-
+      calculation()
     }
   ).fail(() => {
     console.error(`Error fetching data: ${error}`);

@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 .navbar {
@@ -18,7 +19,7 @@ body {
   background-color: #fff;
 }
 .navbar-brand {
-  font-size: 34px;
+  font-size: 2em;
 }
 
 .navbar-brand span {
@@ -26,11 +27,12 @@ body {
 }
 .nav-item a,
 .nav-item i {
-  font-size: 18px;
+  font-size: 1.1em;
   color: black;
 }
 .bi {
   position: relative;
+  cursor: pointer;
 }
 
 #itemAmt {
@@ -52,7 +54,7 @@ main {
 
 .heading {
   margin-top: 2rem;
-  font-size: 2.5em;
+  font-size: 2rem;
   padding-left: 50px;
 }
 .card-container {
