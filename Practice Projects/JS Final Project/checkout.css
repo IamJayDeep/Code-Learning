@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  /* border: 1px solid gray; */
+  background-color: #fff;
+}
+.navbar-brand {
+  font-size: 34px;
+}
+
+.navbar-brand span {
+  font-weight: bold;
+}
+.nav-item a,
+.nav-item i {
+  font-size: 18px;
+  color: black;
+}
+.bi {
+  position: relative;
+}
+#itemAmt {
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: -12px;
+  right: -9px;
+  font-size: 12px;
+  padding: 1px 5px;
+  border-radius: 50%;
+}
+
+#checkout {
+  margin: 3rem auto;
+  width: 80vw;
+}
+
+#cHeading {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+}
+
+#itemCount {
+  margin-bottom: 1.3rem;
+  width: 100%;
+}
+.pdt-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itm-card {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vw;
+  /* border: 1px solid black; */
+  border-radius: 0.3em;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.578);
+  margin-bottom: 0.8rem;
+}
+.right-info {
+  margin: 18px 18px 18px 5px;
+}
+
+.right-info h3 {
+  font-size: 20px;
+}
+
+.right-info p {
+  margin: auto;
+}
+
+.itm-card .img {
+  /* width: ; */
+  height: 100%;
+  margin: 8px 8px;
+}
+.itm-card .img img {
+  height: 80%;
+  margin-top: 7px;
+  padding: 0 5px;
+}
+
+.amt-card {
+  width: 45%;
+  height: 13.7vw;
+  border-radius: 0.3em;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.578);
+  padding: 1rem;
+}
+
+.amt-card p,
+.amt-card span {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1.3rem 0 2rem 0;
+}
+
+#price {
+  color: rgb(59, 100, 100);
+  font-size: 1.3em;
+}
+
+.amt-card button {
+  padding: 0.5rem 5rem;
+  background-color: rgb(7, 164, 237);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0.3em;
+  border: none;
+}
+
+.amt-card button:hover {
+  box-shadow: 0 0 4px rgb(7, 164, 237);
+}
+.footer-items {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.footer-items a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.footer-items h2 {
+  font-size: 17px;
+}
+
+.footer-items a:hover {
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.685);
+}

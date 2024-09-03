@@ -29,7 +29,19 @@ body {
   font-size: 18px;
   color: black;
 }
-
+.bi {
+  position: relative;
+}
+#itemAmt {
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: -12px;
+  right: -9px;
+  font-size: 12px;
+  padding: 1px 5px;
+  border-radius: 50%;
+}
 #container {
   display: flex;
   justify-content: center;

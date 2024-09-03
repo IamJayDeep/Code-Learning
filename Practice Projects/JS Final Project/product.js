@@ -3,6 +3,8 @@ $(document).ready(() => {
 
   const pId = params.get("productId");
 
+  const basket = JSON.parse(localStorage.getItem('data')) || []
+
   $.getJSON(
     `https://5d76bf96515d1a0014085cf9.mockapi.io/product/${pId}`,
     (productData) => {
@@ -61,6 +63,7 @@ $(document).ready(() => {
       var addToCart = document.createElement("button");
       addToCart.innerText = `Add to Cart`;
       addToCart.id = "cartBtn";
+      addToCart.dataset.item = productData.id;
 
       container.append(imgPreview, leftContainer);
       imgPreview.append(mainPreview);
@@ -74,6 +77,28 @@ $(document).ready(() => {
         PdtPreview,
         addToCart
       );
+
+      $("#cartBtn").on("click", function (id) {
+        let search = basket.find((x) => x.id === productData.id)
+        if (search === undefined) {
+          basket.push({
+            id: productData.id,
+            qty: 1
+          })
+        } else {
+          search.qty += 1
+        }
+        // console.log(basket);
+        calculation()
+        localStorage.setItem('data', JSON.stringify(basket))
+
+      });
+
+      let calculation = () => {
+        const cartIcon = $('#itemAmt').text(basket.map((x) => x.qty).reduce((x, y) => x + y, 0))
+
+      }
+
     }
   ).fail(() => {
     console.error(`Error fetching data: ${error}`);

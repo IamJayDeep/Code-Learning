@@ -4,21 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shopping Site</title>
+  <title>SHOPLANE - A place of shopping</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-  <link rel="stylesheet" href="style2.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="checkout.css" />
 </head>
 
 <body>
+
   <!-- Nav Bar -->
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container-lg d-flex">
@@ -41,7 +40,7 @@
       <div class="right-menu d-flex">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <i class="bi bi-cart">
+            <i class="bi bi-cart"> 
               <span id="itemAmt">0</span>
             </i>
           </li>
@@ -56,40 +55,45 @@
     </div>
   </nav>
 
-  <!-- splide carousel -->
-  <section class="splide" aria-label="Splide Basic HTML Example">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <img src="https://i.postimg.cc/NFvKNRhw/image.png" alt="" />
-        </li>
-        <li class="splide__slide">
-          <img src="https://i.postimg.cc/T2t04P7W/image.png" alt="" />
-        </li>
-        <li class="splide__slide">
-          <img src="https://i.postimg.cc/Pxp6bnHR/image.png" alt="" />
-        </li>
-        <li class="splide__slide">
-          <img src="https://i.postimg.cc/sgvXyT4J/image.png" alt="" />
-        </li>
-      </ul>
+  <!-- Product Details -->
+  <div id="checkout">
+    <h1 id="cHeading">Checkout</h1>
+    <div id="pdt-items" class="pdt-items">
+      <div class="itemCount">
+        <h3 id="itemCount">Total Items: 1</h3>
+        <div class="itm-card">
+          <div class="img">
+            <img
+              src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2018/9/19/b1373b00-37d4-41a0-a908-5d742a68d3661537343756229-1.jpg"
+              alt="">
+          </div>
+          <div class="right-info">
+            <h3>Men Black Action Parkview Lifestyle Shoes</h3>
+            <p id="qty">x2</p>
+            <p id="pdt-price">Rs. 111</p>
+          </div>
+        </div>
+        <div class="itm-card">
+          <div class="img">
+            <img
+              src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2018/9/19/b1373b00-37d4-41a0-a908-5d742a68d3661537343756229-1.jpg"
+              alt="">
+          </div>
+          <div class="right-info">
+            <h3>Men Black Action Parkview Lifestyle Shoes</h3>
+            <p id="qty">x2</p>
+            <p id="pdt-price">Rs. 111</p>
+          </div>
+        </div>
+      </div>
+      <div id="amt-card" class="amt-card">
+        <h3>Total Amount</h3>
+        <p>Rs: <span id="price">111</span></p>
+        <button id="order">Place Order</button>
+      </div>
     </div>
-  </section>
-  <!-- main Section -->
-  <main>
-    <div id="clothing-section">
-      <h1 class="heading">Clothing for Men and Wemen</h1>
-      <section id="clothing">
-        <div class="card-container" id="clothingCard"></div>
-      </section>
-    </div>
-    <div id="accessory-section">
-      <h1 class="heading" id="accessory-sec">Accessories for Men and Wemen</h1>
-      <section id="accessory">
-        <div class="card-container" id="accessoryCard"></div>
-      </section>
-    </div>
-  </main>
+
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer mt-auto py-5 bg-dark ">
@@ -119,12 +123,10 @@
         <h2 class="fw-bold text-white">Address</h2>
         <a href='#' class="pt-2 mb-1">Building 101 Central Avenue LA - 902722 United States</a>
       </div>
-
     </div>
   </footer>
 
-
-  <script src="main2.js"></script>
+  <script src="checkout.js"></script>
 </body>
 
 </html>
