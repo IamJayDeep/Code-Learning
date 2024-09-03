@@ -99,7 +99,7 @@ body {
 
 .amt-card {
   width: 45%;
-  height: 13.7vw;
+  /* height: 13.7vw; */
   border-radius: 0.3em;
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.578);
   padding: 1rem;
