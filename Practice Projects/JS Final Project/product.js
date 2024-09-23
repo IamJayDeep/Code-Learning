@@ -91,7 +91,6 @@ $(document).ready(() => {
         // console.log(basket);
         calculation()
         localStorage.setItem('data', JSON.stringify(basket))
-
       });
 
       let calculation = () => {

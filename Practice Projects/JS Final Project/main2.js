@@ -181,6 +181,7 @@ var productList = [
 ];
 
 $(document).ready(function () {
+  localStorage.clear()
   var splide = new Splide(".splide", {
     reWind: true,
     autoplay: true,
